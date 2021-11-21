@@ -1,0 +1,23 @@
+.todo-list {
+  padding-left: 0px;
+  max-height: 24rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  
+}
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+  height: auto;
+  padding: 3rem;
+}
+.todo-list::-webkit-scrollbar-button {
+  height: 8px;
+}
+.todo-list::-webkit-scrollbar-thumb {
+  background: #0000003d;
+  border-radius: 2rem;
+}
+  
+

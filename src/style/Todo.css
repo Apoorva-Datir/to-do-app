@@ -1,0 +1,83 @@
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  
+}
+
+.lists-todo{
+  min-height: 1em;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6em;
+  margin: 0.7em auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.lists-todo:hover{
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+}
+.li-info {
+  overflow-x: hidden;
+}
+.li-info li {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 1rem;
+}
+li{
+  list-style: none;
+}
+
+.complete-btn {
+  /* width: 22px;
+  height: 22px; */
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #bbbdc7;
+  color: #00000000;
+  cursor: pointer;
+}
+.active{
+  background: #6ebb95;
+  color: #ffffff;
+  border-color: #5ea180;
+}
+
+.complete-btn{
+  margin-right: 1rem;
+}
+.delete-btn{
+  visibility: hidden;
+  width: 30px;
+  height: auto;
+  border-radius: 60px;
+  border: 2px solid #e75978;
+  color: #e75978;
+  background-color: #00000000;
+  cursor: pointer;
+  /* margin-left: 1rem; */
+}
+
+
+
+.lists-todo:hover .delete-btn {
+  visibility: visible;
+}
+@media screen and (max-width: 700px){
+  .lists-todo{
+    width: 100%;
+  }
+}
+

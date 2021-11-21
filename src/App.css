@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: #000000bd;
+  background: rgb(68, 105, 247);
+  background: linear-gradient(
+    238deg,
+    rgba(68, 105, 247, 1) 0%,
+    rgba(246, 91, 245, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cont{
+   
+  width: 60%;
+  height: 100%;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
+  
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  padding: 3rem;
+  max-height: 40rem;
+ 
+  
 }
-
-.App-link {
-  color: #61dafb;
+/* .cont::-webkit-scrollbar {
+  width: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.cont::-webkit-scrollbar-button {
+  height: 5px;
+}
+.cont::-webkit-scrollbar-thumb {
+  background: #0000003d;
+  border-radius: 2rem;
+} */
+@media screen and (max-width: 700px) {
+  .cont {
+    width: 85%;
   }
 }
